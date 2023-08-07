@@ -1,0 +1,18 @@
+// https://github.com/tsconfig/bases#recommended-tsconfigjson
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+
+  // https://github.com/tsconfig/bases/blob/main/bases/recommended.json
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  },
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Recommended",
+  "exclude": ["node_modules", "dist"]
+}

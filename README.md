@@ -10,7 +10,15 @@ This NodeJS project leverages the power of GPT models to provide engaging and in
 git clone https://github.com/dennis-gonzales/openchat
 ```
 
-### 2. Install Dependencies
+### 2. Set Up Environment Variables
+
+Copy the `.env.example` file and rename it to `.env`. Update the `OPENAI_API_KEY` with your OpenAI API key:
+
+```env
+OPENAI_API_KEY="sk-..."
+```
+
+### 3. Install Dependencies
 
 Ensure you have Yarn installed on your system, then run:
 
@@ -18,7 +26,7 @@ Ensure you have Yarn installed on your system, then run:
 yarn
 ```
 
-### 3. Start the Server
+### 4. Start the Server
 
 Launch the development server:
 

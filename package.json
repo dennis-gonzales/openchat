@@ -2,14 +2,20 @@
   "name": "openchat",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "main.ts",
+  "exports": "./main.ts",
   "scripts": {
-    "dev": "tsnd --respawn --pretty --transpile-only ./main.ts",
+    "build": "tsc",
+    "start": "node ./dist/main.js",
     "lint": "eslint --fix .",
     "format": "prettier --write .",
     "prepare": "husky install"
   },
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
   "dependencies": {
+    "chatgpt": "^5.2.5",
     "dotenv": "^16.3.1",
     "openai": "^3.3.0"
   },
@@ -24,6 +30,7 @@
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-unicorn": "^48.0.1",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.1",

@@ -1,17 +1,17 @@
 import { config } from 'dotenv';
-import { Configuration, OpenAIApi } from 'openai';
-import { createChat } from './src/chat-completion';
+import { ChatGPTAPI } from 'chatgpt';
 
 config();
 
-async function main() {
-  const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
+export async function example() {
+  const api = new ChatGPTAPI({
+    apiKey: process.env.OPENAI_API_KEY || 'ERR',
   });
 
-  const openai = new OpenAIApi(configuration);
-
-  createChat(openai);
+  const response = await api.sendMessage(
+    'create a sorting algorithm in python'
+  );
+  console.log(response.text);
 }
 
-main();
+await example();

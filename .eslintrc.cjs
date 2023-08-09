@@ -29,6 +29,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
+    'plugin:unicorn/recommended',
     'prettier', // Prettier must be last
   ],
   settings: {
@@ -42,7 +43,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'import', 'prettier'],
+  plugins: ['@typescript-eslint', 'import', 'unicorn', 'prettier'],
   rules: {
     ...variableRules,
     ...functionRules,

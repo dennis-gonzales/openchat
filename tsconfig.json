@@ -4,13 +4,15 @@
 
   // https://github.com/tsconfig/bases/blob/main/bases/recommended.json
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "commonjs",
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
+    "outDir": "./dist",
+    "noEmit": false,
     "allowJs": false
   },
   "$schema": "https://json.schemastore.org/tsconfig",

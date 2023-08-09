@@ -1,4 +1,6 @@
-import { OpenAIApi, Configuration, CreateChatCompletionRequest } from 'openai';
+import type { CreateChatCompletionRequest } from 'openai';
+import { Configuration, OpenAIApi } from 'openai';
+
 import { OPENAI_API_KEY } from '../configs/env';
 
 // Initialize OpenAI client

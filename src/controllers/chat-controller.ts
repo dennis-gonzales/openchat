@@ -1,4 +1,5 @@
-import { Request, Response, NextFunction } from 'express';
+import type { NextFunction, Request, Response } from 'express';
+
 import { sendMessageToOpenAI } from '../services/openai-chat';
 
 export async function sendMessage(

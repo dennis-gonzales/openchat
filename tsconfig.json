@@ -17,5 +17,6 @@
   },
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Recommended",
+  "include": ["**/*.ts", ".eslintrc.cjs"],
   "exclude": ["node_modules", "dist"]
 }

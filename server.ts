@@ -2,8 +2,8 @@ import './src/configs/env';
 
 import express, { json } from 'express';
 
-import routes from './src/routes';
 import errorHandler from './src/middleware/error-handler';
+import routes from './src/routes';
 
 const app = express();
 const port = process.env.PORT || 3000;

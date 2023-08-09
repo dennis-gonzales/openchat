@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { sendMessageToOpenAI } from '../openai-chat';
+import { sendMessageToOpenAI } from '../services/openai-chat';
 
 export async function sendMessage(
   request: Request,

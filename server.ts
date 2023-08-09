@@ -1,3 +1,5 @@
+import './src/configs/env';
+
 import express, { json } from 'express';
 
 import routes from './src/routes';

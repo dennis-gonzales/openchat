@@ -1,12 +1,9 @@
 import { OpenAIApi, Configuration, CreateChatCompletionRequest } from 'openai';
-import * as dotenv from 'dotenv';
-
-// Load environment variables from .env file
-dotenv.config();
+import { OPENAI_API_KEY } from '../configs/env';
 
 // Initialize OpenAI client
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: OPENAI_API_KEY,
 });
 
 const openai = new OpenAIApi(configuration);

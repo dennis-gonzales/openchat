@@ -18,6 +18,14 @@ const functionRules = {
   'func-style': [2, 'declaration', { allowArrowFunctions: false }],
 };
 
+const unicornRules = {
+  /**
+   * @description Allow abbreviations
+   * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
+   */
+  'unicorn/prevent-abbreviations': 'off',
+};
+
 module.exports = {
   env: {
     browser: true,
@@ -47,6 +55,7 @@ module.exports = {
   rules: {
     ...variableRules,
     ...functionRules,
+    ...unicornRules,
 
     'prettier/prettier': 'warn',
   },

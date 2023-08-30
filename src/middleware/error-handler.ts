@@ -1,4 +1,4 @@
-import type { NextFunction, Request, Response } from 'express';
+import type { NextFunction, Request, Response } from "express";
 
 function errorHandler(
   error: Error,
@@ -10,9 +10,9 @@ function errorHandler(
   console.error(error);
 
   // Respond with a generic error message
-  response
-    .status(500)
-    .json({ error: 'An error occurred while processing your request.' });
+  response.status(500).json({
+    error: error?.message || "An error occurred while processing your request.",
+  });
 }
 
 export default errorHandler;
